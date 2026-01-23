@@ -197,7 +197,7 @@ export function App() {
                         <Cpu className="w-5 h-5 text-indigo-400" />
                         <span className="font-black uppercase tracking-tight">HYBRID_<span className="text-indigo-400">OS</span></span>
                     </div>
-                    <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.4em]">© 2024 MK_HYBRID_PLATFORM • 20/30 DISPATCHED</p>
+                    <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.4em]">© 2026 HYBRID_OS // RUNTIME • 20/30 DISPATCHED</p>
                 </div>
             </footer>
         </div>

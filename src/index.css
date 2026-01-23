@@ -1,11 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-body {
-    @apply antialiased bg-slate-950 text-white overflow-x-hidden;
+@layer base {
+    body {
+        @apply bg-slate-950 text-white antialiased selection:bg-indigo-500/30;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
 }
 
-.hybrid-card {
-    @apply bg-slate-900/50 backdrop-blur-xl border border-white/5 rounded-3xl;
+@layer components {
+    .hybrid-card {
+        @apply bg-slate-900/40 backdrop-blur-2xl border border-white/5 rounded-3xl overflow-hidden transition-all;
+    }
 }
