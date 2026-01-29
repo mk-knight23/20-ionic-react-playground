@@ -1,47 +1,53 @@
 {
-  "name": "ionic-react",
-  "version": "0.0.1",
-  "private": true,
-  "dependencies": {
-    "@ionic/react": "^4.11.0",
-    "@ionic/react-router": "^4.11.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^8.0.3",
-    "@types/jest": "^24.0.25",
-    "@types/node": "^12.12.24",
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
-    "@types/react-router": "^5.1.4",
-    "@types/react-router-dom": "^5.1.3",
-    "ionicons": "^4.6.3",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
-    "typescript": "3.8.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "name": "46-starter-ionic-react",
+    "private": false,
+    "version": "2.1.0",
+    "description": "Premium cross-platform mobile UI investigation modernized with React 19, Vite 6, and Tailwind CSS v4. Mobile-first App UI theme.",
+    "type": "module",
+    "scripts": {
+        "lint": "eslint .",
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "type-check": "tsc --noEmit"
+    },
+    "keywords": [
+        "ionic",
+        "react",
+        "mobile",
+        "hybrid",
+        "typescript",
+        "tailwind"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "description": "An Ionic project"
+    "author": "Kazi Musharraf",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mk-knight23/46-starter-ionic-react.git"
+    },
+    "homepage": "https://mk-knight23.github.io/46-starter-ionic-react/",
+    "devDependencies": {
+        "@eslint/js": "^9.39.2",
+        "@tailwindcss/vite": "^4.1.18",
+        "@types/react": "^19.2.10",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-react": "^4.7.0",
+        "autoprefixer": "^10.4.23",
+        "eslint": "^9.39.2",
+        "eslint-plugin-react-hooks": "^7.0.1",
+        "eslint-plugin-react-refresh": "^0.4.26",
+        "globals": "^17.1.0",
+        "postcss": "^8.5.6",
+        "tailwindcss": "^4.0.0",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.53.1",
+        "vite": "^6.4.1"
+    },
+    "dependencies": {
+        "@ionic/react": "^8.7.17",
+        "framer-motion": "^12.29.2",
+        "lucide-react": "^0.563.0",
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4"
+    }
 }
