@@ -8,5 +8,5 @@ export default defineConfig({
         react(),
         tailwindcss(),
     ],
-    base: process.env.VERCEL || process.env.NETLIFY ? './' : '/20-ionic-react-playground/',
+    base: process.env.VERCEL || process.env.NETLIFY ? './' : '/46-starter-ionic-react/',
 })

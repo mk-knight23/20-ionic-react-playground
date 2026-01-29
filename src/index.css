@@ -1,14 +1,129 @@
 @import "tailwindcss";
 
+@theme {
+    --color-app-primary: #007aff;
+    --color-app-secondary: #5856d6;
+    --color-app-success: #34c759;
+    --color-app-warning: #ff9500;
+    --color-app-danger: #ff3b30;
+    --color-app-bg: #f2f2f7;
+    --color-app-card: #ffffff;
+    --color-app-text: #1c1c1e;
+    --color-app-text-secondary: #8e8e93;
+    --color-app-border: #e5e5ea;
+}
+
 @layer base {
     body {
-        @apply bg-slate-950 text-white antialiased selection:bg-indigo-500/30;
-        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        @apply bg-[#f2f2f7] text-[#1c1c1e] antialiased selection:bg-blue-100;
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    * {
+        -webkit-touch-callout: none;
     }
 }
 
 @layer components {
-    .hybrid-card {
-        @apply bg-slate-900/40 backdrop-blur-2xl border border-white/5 rounded-3xl overflow-hidden transition-all;
+    .app-container {
+        @apply min-h-screen bg-[#f2f2f7] max-w-md mx-auto;
+    }
+
+    .app-header {
+        @apply sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-[#e5e5ea];
+    }
+
+    .app-nav-bar {
+        @apply fixed bottom-0 left-0 right-0 bg-white border-t border-[#e5e5ea] pb-6;
+    }
+
+    .app-nav-item {
+        @apply flex flex-col items-center justify-center py-2 px-4 text-xs text-[#8e8e93] hover:text-[#007aff] transition-colors;
+    }
+
+    .app-nav-item-active {
+        @apply text-[#007aff];
+    }
+
+    .app-card {
+        @apply bg-white rounded-2xl shadow-sm overflow-hidden;
+    }
+
+    .app-story-ring {
+        @apply p-0.5 rounded-full;
+        background: linear-gradient(45deg, #ff2d55, #ff9500, #ff2d55);
+    }
+
+    .app-story-inner {
+        @apply p-0.5 rounded-full bg-white;
+    }
+
+    .app-story-avatar {
+        @apply w-16 h-16 rounded-full object-cover border-2 border-white;
+    }
+
+    .app-button-primary {
+        @apply inline-flex items-center justify-center px-6 py-3 bg-[#007aff] text-white font-semibold rounded-full transition-all active:scale-95;
+    }
+
+    .app-button-secondary {
+        @apply inline-flex items-center justify-center px-6 py-3 bg-white border border-[#e5e5ea] text-[#1c1c1e] font-semibold rounded-full transition-all active:scale-95;
+    }
+
+    .app-feed-item {
+        @apply bg-white rounded-2xl mb-4 overflow-hidden shadow-sm;
+    }
+
+    .app-feed-header {
+        @apply flex items-center justify-between p-4;
+    }
+
+    .app-feed-avatar {
+        @apply w-10 h-10 rounded-full object-cover;
+    }
+
+    .app-feed-content {
+        @apply px-4 pb-2;
+    }
+
+    .app-feed-image {
+        @apply w-full h-64 object-cover;
+    }
+
+    .app-feed-actions {
+        @apply flex items-center gap-6 p-4 border-t border-[#f2f2f7];
+    }
+
+    .app-action-button {
+        @apply flex items-center gap-2 text-[#8e8e93] hover:text-[#ff3b30] transition-colors;
+    }
+
+    .app-badge {
+        @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold;
+    }
+
+    .app-badge-blue {
+        @apply bg-blue-100 text-blue-600;
+    }
+
+    .app-badge-green {
+        @apply bg-green-100 text-green-600;
+    }
+
+    .app-badge-red {
+        @apply bg-red-100 text-red-600;
+    }
+
+    .app-search-bar {
+        @apply flex items-center gap-3 px-4 py-2.5 bg-[#f2f2f7] rounded-full;
+    }
+
+    .app-chip {
+        @apply inline-flex items-center px-3 py-1.5 bg-white border border-[#e5e5ea] rounded-full text-sm text-[#1c1c1e] hover:bg-[#f2f2f7] transition-colors;
+    }
+
+    .app-divider {
+        @apply h-px bg-[#e5e5ea] my-4;
     }
 }
